@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tokbox.pictureinpicturesample.DragFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_drag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SessionActivity">
+
+    <Button
+        android:id="@+id/btn_pip"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:visibility="gone"
+        android:background="@drawable/ic_pip" />
+
+    <FrameLayout
+        android:id="@+id/frameFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#45000000"></FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framePop"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="@dimen/publisher_right_margin"
+        android:layout_marginRight="@dimen/publisher_end_margin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#45000000"
+        android:padding="@dimen/publisher_padding" />
+
+
+</com.tokbox.pictureinpicturesample.DragFrameLayout>
